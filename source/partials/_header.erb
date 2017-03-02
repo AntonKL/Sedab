@@ -1,9 +1,9 @@
 <header class="centered-navigation" role="banner">
   <div class="centered-navigation-wrapper">
-    <a href="javascript:void(0)" class="mobile-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
-    </a>
-    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+    <% link_to '/', :class => "mobile-logo" do %>
+      <%= image_tag 'logo.png' %>
+    <% end %>
+    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENY</a>
     <nav role="navigation">
       <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
         <li class="nav-link"><a href="/jobb">Tillgängliga jobb</a></li>
@@ -12,7 +12,7 @@
             <%= image_tag 'logo.png' %>
           <% end %>
         </li>
-        <li class="nav-link"><a href="javascript:void(0)">Om Föreningshuset</a></li>
+        <li class="nav-link"><a href="/om-oss">Om Föreningshuset</a></li>
       </ul>
     </nav>
   </div>

@@ -17,15 +17,26 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
   font-weight: 400;
-  text-align: center
 }
 
 h1 {
   font-size: 2.5rem;
+  text-align: center
 }
 
 h2 {
   font-size: 2rem;
+  text-align: center
+}
+
+h6 {
+  margin-bottom: $small-spacing * 0.3;
+  font-weight: 600;
+  font-size: $base-font-size;
+}
+
+h6 ~ ul {
+  margin-top: $small-spacing;
 }
 
 p {
@@ -50,4 +61,16 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+.small-spacing {
+  margin-bottom: $small-spacing!important;
+}
+
+.base-spacing {
+  margin-bottom: $base-spacing!important;
+}
+
+.large-spacing {
+  margin-bottom: $large-spacing!important;
 }
